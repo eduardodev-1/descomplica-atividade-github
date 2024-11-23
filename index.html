@@ -12,7 +12,23 @@
     </header>
     <main>
         <p>Terceira atividade prática Github</p>
-        <button onclick="alert('Hello, World!')">Click Me</button>
+        <button onclick="openModal()">Open Image</button>
     </main>
+
+    <!-- Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img src="images/golden.jpg" alt="Golden Image" class="modal-content">
+    </div>
+
+    <script>
+        function openModal() {
+            document.getElementById('imageModal').style.display = 'flex';
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').style.display = 'none';
+        }
+    </script>
 </body>
 </html>
